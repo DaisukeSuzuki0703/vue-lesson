@@ -15,7 +15,7 @@ const config = {
   resolve: {
     extensions: ['.js', '.json', '.vue'],
     alias: {
-      Components: path.resolve(__dirname, 'src/components'),
+      Components: path.resolve(__dirname, 'src/components'),//webpack.config.babel.jsと同じ階層までのパスを__dirname（絶対パスが格納されている）で取ってきていてそこからのsrc/componentsを指定している。
       'vue$': 'vue/dist/vue.esm.js'
     }
   },
